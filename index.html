@@ -1,52 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>KEIR SYSTEM</title>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible"  content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
-  </head>
+    <script src="./script.js" defer></script>
+    <title>Register here!</title>
+
+    <h1> KINDLY SUBMIT YOUR DEVICE DETAILS HERE</h1>
+    
+    <P>SERVICE IS CURRENTLY AVAILABLE FOR ALL USERS IN THE COUNTRY/CONTINENT ROUND THE CLOCK</P><b></b>
+
+    <h2>Owner Personal Details</h2>
+
+    </head>
+
     <body>
-      <main>
-        <div><h1>SECURE YOUR DEVICE NOW!</h1></div>
-       
-          <div class="main-body-div">
-          <div class="body-desription">
-            <div class="main-title">KEIR CARE</div>
-             <div class="title-description">
-              <P> 
-                Welcome to KEIR corporate, your trusted partner in blocking stolen phones and ensuring the security of your mobile devices! 
-               </P>
-             </div>
-           </div>
-          <div class="body-desription">
-            <div class="main-title">YOUR SAFETY OUR VALUE</div>
-            <div class="title-description"> 
-              <p> With our cutting-edge technology and advanced security measures, we have developed a robust platform that allows users to quickly and efficiently block stolen phones, rendering them useless to thieves. By immobilizing stolen devices, we effectively disrupt the illicit market for stolen smartphones, making it harder for thieves to profit from their illegal activities.
-            </p>
-          </div>
-          </div>
-          <div class="body-desription">
-           <div class="main-title">ACCESSIBILTY</div>
-            <div class="title-description"><p>
-              Our system is designed to be user-friendly and accessible to everyone. Whether you're an individual, a business, or a law enforcement agency, our platform caters to your specific needs. We believe that everyone deserves the right to use their mobile devices without the fear of theft or unauthorized usage.
-              </p></div>
-          </div>
-          </div>
-      </main>
-     <section>
-      <div class="dropdown"><button>Frequently Asked Questions</button>
-        <div class="dropdown-content">
-          <ul>
-            <a href="#"><li>What is phone blocking?</li></a>
-            <a href="#"><li>How does phone blocking work?</li></a>
-            <a href="#"><li>Can I block my lost phone?</li></a>
-            <a href="#"><li>What information do I need to block my phone?</li></a>
-            <a href="#"><li>Will blocking my phone erase my data?</li></a>
-            <a href="#"><li>Can a blocked phone be unblocked?</li></a>
-          </ul>
-        </div>
-        </div>
-  
-     </section>
+    <form action>
+        <label for="Full_Name">Full_Name:</label>
+        <input type="text" id="Full_Name" name="Full_Name"required><br><br>
+        <label for="ID/Passport_Number">ID/Passport_Number:</label>
+        <input type="varchar" id="ID/Passport_Number" name="ID/Passport_Number"required ><br><br>
+        <label for="Location">County:</label>
+        <input type="text" id="Location" name="County"required><br><br>
+        <label for="Email_address">Email_adress:</label>
+        <input type="email" id="email" name="email" value="" oninput="setEmail(event.target.value)" /><br><br>
+
+
+        <button type="submit">Submit Details</button>
+
+
+        <h2>Device Information</h2>
+
+     <form action>
+        <label for="Device_Model">Device_Model:</label>
+        <input type="varchar" id="Device_Model" name="Device_Model"><br><br>
+        <label for="Device_Brand">Device_Brand:</label>
+        <input type="text" id="Device_Brand" name="Device_Brand"required><br><br>
+        <label for="IMEI ">IMEI:</label>
+        <input type="NUMBER" id="IMEI" name="IMEI"required><br><br>
+
+        <button type="submit">Submit Details</button>
+
+    </form>
+    
     </body>
 </html>
