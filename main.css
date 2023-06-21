@@ -12,12 +12,10 @@ main div h1{
   main div.main-body-div{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     column-gap: 30px;
     padding: 20px 20px 20px 20px;
     margin-bottom: 30px;
-    vertical-align: top;
+   
   
   }
   .body-desription{
@@ -29,11 +27,16 @@ main div h1{
     letter-spacing: 0.1px;
     line-height: 25px;
     font-size: 20px;
-
-
+  
+  }
+  .body-desription:hover{
+    background-color: #e7eee9;
   }
   div .main-title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    
   }
  
