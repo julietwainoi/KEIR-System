@@ -1,0 +1,42 @@
+main div h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b81422;
+  padding: 20px 0px 0px 0px;
+  height: 90px;
+  border-radius: 9px;
+  }
+  
+
+  main div.main-body-div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+   
+  
+  }
+  .body-desription{
+    padding: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #14b82f;
+    box-shadow: 0.2px 2px 2px 1px #87a58c ;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    font-size: 20px;
+  
+  }
+  .body-desription:hover{
+    background-color: #e7eee9;
+  }
+  div .main-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    
+  }
+ 
