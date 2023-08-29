@@ -1,0 +1,192 @@
+
+/* *****************homepage css******* */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 8px;
+  padding-top: 8px;
+  background-color: #9eecb7;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #9eecb7;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    }
+    .containerholdingphoneImage {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 8px;
+    }
+    .holdingphoneImage {
+    height: 220px;
+    border-radius: 8px;
+    }
+.keired-phone {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.keired-phone-first-description {
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.keired-phone-image-paragraph {
+background-color: #c5ddca;
+padding: 10px 10px;
+border-radius: 8px;
+font-weight: 600;
+}
+div h3 {
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #17cf36;
+  font-weight: 900;
+  font-size: 20px;
+}
+ul ol {
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 19px;
+}
+
+
+/* **********keir care div(s)******* */
+
+  main div.main-body-div {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 20px 20px;
+  }
+
+  .body-desription {
+    padding: 20px;
+    border-radius: 8px;
+    border-color: #0e4718;
+    box-shadow: 0.15px 0.17px 0.8px 0.9px #3add55;
+  }
+  div .main-title {
+    font-size:23px; 
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .title-description p { 
+    text-align: center;
+    padding-top: 10px;
+    font-weight:400;
+    font-size: 200;
+    line-height: 3vh;
+    margin:auto;
+    }
+  .body-desription:hover{
+    background-color: #e5f5ea;
+  }
+
+/* ********About Us******* */
+
+.aboutUs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+.div-about-img-1 {
+  width: 100%;
+}
+.about-img-1{
+  display: flex;
+  margin: auto;
+  cursor: zoom-in;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
+  width: 900px;
+  height: 400px;
+  border-radius: 10px;
+}
+.combinedAlignment{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.about-rotate{
+    width: 700px;
+    height: 100px;
+    background-color: hsl(0, 0%, 90%);
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    border-radius: 20px;
+    background-color: #14b87f;
+}
+.about-title{
+  font-size: 20px;
+  color: #14b82f;
+  font-weight: 900;
+}
+.about-paragraph{
+ 
+  
+}
+.mission-paragraph{
+  background-color: hsl(0, 0%, 90%);
+  padding: 10px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+} 
+.mission-paragraph:hover {
+  border-style:solid;
+  border-color: #14b87f;
+  border-radius: 8px;
+}
+/* *******Faq css***** */
+.dropdown {
+  background-image: url();
+}
+h4 {  
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+margin-top: 20px;
+}
+.p-description {
+  margin-left: 20px;
+  margin-left: 20px;
+  font-size: 19px;
+  display: none;
+}
+ul li {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #b3e2bb;
+  border-radius: 5px;
+  padding: 5px 5px;
+  list-style: none;
+  margin: 10px 10px 10px 10px;
+}
+ul li:hover {
+  display: block;
+  background-color: #c5ddca;
+}
+.dropdown-content ul li:hover p {
+  display: block;
+}

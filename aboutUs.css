@@ -1,0 +1,52 @@
+.aboutUs .aboutusLink {
+  background-color: blue;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+.aboutUs.div-about-img-1 {
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+}
+.about-img-1{
+  display: flex;
+  margin: auto;
+  cursor: zoom-in;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
+  width: 1000px;
+  height: 400px;
+  border-radius: 10px;
+}
+.combinedAlignment{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+.about-rotate{
+    width: 700px;
+    height: 100px;
+    background-color: hsl(0, 0%, 90%);
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    border-radius: 20px;
+}
+.about-title{
+  font-size: 20px;
+  color: #14b82f;
+  font-weight: 900;
+}
+.about-paragraph{
+  font-size: 19px;
+}
+.mission-paragraph{
+  font-size: 19px;
+  padding: 10px 10px;
+} 

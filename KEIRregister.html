@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+    <title>Register here!</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="KEIRregister.css">
+
+</head>
+
+<body>
+    <h1> KINDLY SUBMIT YOUR DEVICES DETAILS HERE</h1>
+
+    <P>SERVICE IS CURRECTLY AVAILABLE FOR ALL USERS IN THE COUNTRY/CONTINENT ROUND THE CLOCK</P>
+
+    <h2>Personal Details</h2>
+
+    <div class="left-right-div-container">
+        <div class="left-div">
+            <div class="personaldetails">
+                <form class=" form" onsubmit="storeData(event)" id="createpersonal-details">
+
+                    <div class="fullname-div" id="fullname-div">
+                        <label for="Full_Name" class="label" id="FullNamelabel">Full_Name:</label>
+                        <input type="text" id="FullName" name="FullName" placeholder="fullName" required><br><br>
+                    </div>
+
+                    <div class="passportnumber-div" id="passportnumber-div">
+                        <label for="PassportNumber" class="label" id="passportNumberlabel">ID/Passport_Number:</label>
+                        <input type="text" id="PassportNumber" name="PassportNumber" placeholder="passportNumber"required><br><br>
+                    </div>
+
+                    <div class="location-div" id="location-div">
+                        <label for="Location" class="label" id="Locationlabel">Location:</label>
+                        <input type="text" id="Location" name="Location" placeholder="Location" required><br><br>
+                    </div>
+
+                    <div class="emailaddress-div" id="Emailaddress-div">
+                        <label for="Emailaddress" class="label" id="Emailaddresslabel">Email_address:</label>
+                        <input type="email" id="Emailaddress" name="Emailaddress" placeholder="Emailaddress"
+                            required><br><br>
+                    </div>
+
+                    <div id="form-btns">
+                        <button type="submit" class="button SUBMIT" id = "submit">󠀫󠀫<i class="fas fa"></i> SUBMIT</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="phonedetails-dev" id="createphone-details">
+                <h2>Device Information</h2>
+
+                <form class="form " id="createphone-details">
+                    <div class="devicemodel" id="DeviceModel">
+                        <label for="DeviceModel" class="label" id="DeviceModel" label="DeviceModel">DeviceModel:</label>
+                        <input type="text" id="DeviceModel" name="DeviceModel"><br><br>
+                    </div>
+
+                    <div class="Devicebrand" id="DeviceBrand">
+                        <label for="devicebrand" class="label" id="DeviceBrand" label="DeviceBrand">DeviceBrand:</label>
+                        <input type="text" id="DeviceBrand" name="DeviceBrand"><br><br>
+                    </div>
+                    <div class="IMEI" igd="IMEI">
+                        <label for="IMEI" class="label" id="IMEI" label="IMEI">IMEI:</label>
+                        <input type="text" id="IMEI" name="IMEI"><br><br>
+                    </div>
+
+                    <!-- <div id="form-btns">
+                        <button type="submit" class="button SUBMIT" id = "submit">󠀫󠀫<i class="fas fa"></i> SUBMIT</button>
+                    </div> -->
+
+                </form>
+            </div> 
+            <div class="Declaration" id="declaration-details">
+                <h2> Declaration:I hereby declare that all the details given above are true to the best of my knowledge.Incase the  above given information is false or misleading, 
+                    I am aware that i will be held liable for it! </h2>
+            </div>
+            <div id="form-btns">
+                <button type="submit" class="button SUBMIT" id = "submit">󠀫󠀫<i class="fas fa"></i> SUBMIT</button>
+            </div>
+
+        </div>
+
+        <div class="right-div" id = "right-div">
+            <div class="show-delete" id="tasks-header">
+                <h1><i class="fa fa-tasks"></i>PERSONAL DETAILS</h1>
+                <button class="button showAll" id="showAll" onclick = "showAll()">showAll</button>
+                <button class="button deleteAll" id="deleteAll" onclick="deleteAll()">deleteAll</button>
+
+        </div>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("createpersonal-details").addEventListener("focusin",function(){
+            document.getElementById("createpersonal-details").style.color = " rgb(61, 198, 243)";
+        });
+        document.getElementById("createpersonal-details").addEventListener("focusout",function(){
+            document.getElementById("createpersonal-details").style.color = " #aaaaaa";
+        });
+        document.getElementById("FullName").addEventListener("focusin", function(){
+            document.getElementById("FullNamelabel").style.color = " rgb(61, 198, 243)";
+        });
+        document.getElementById("FullName").addEventListener("focusout", function(){
+            document.getElementById("FullNamelabel").style.color = " #aaaaaa";
+        });
+    </script>
+
+ <script src="./KEIRregister.js"></script>   
+</body>
+
+
+</html>

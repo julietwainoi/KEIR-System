@@ -2,7 +2,11 @@
 <html>
 <head>
   <title>User Login</title>
-  <link rel="stylesheet" href="./style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+  <script src="login.js"></script>
+
+  <link rel="stylesheet" href="./just.css">
 </head>
 <body>
   <div class="container">
@@ -15,9 +19,13 @@
       <div class="form-group">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
+        <a href="password_reset.html">Forgot Password?</a>
       </div>
       <div class="form-group">
         <button type="submit">Login</button>
+        <p>Do you have an Account with Us?</p>
+        <a href="./Registration.html">Sign Up</a>
+
       </div>
     </form>
   </div>
